@@ -2,7 +2,7 @@
 #include<math.h>
 using namespace std;
 int main(){
-float x[100],fx[100],loga,b,a;
+float x[100],fx[100],loga,b,a,p;
 float xsum=0,ysum=0,sumly=0,xxsum=0,sumxly=0;
 int n;
 cout<<"Enter the value of n"<<endl;
@@ -26,8 +26,10 @@ cout<<"The value of b is "<<b<<" and log a is "<<loga<<endl<<endl;
 a=exp(loga);
 cout<<"The value of a is "<<a<<endl<<endl;
 
-cout<<"The regression equation becomes logy="<<a<<"+"<<b<<"x"<<endl<<endl;
+cout<<"The regression equation becomes y="<<a<<"+"<<b<<"x"<<endl<<endl;
 
-cout<<"The exponential fit is given by y="<<a<<"e^"<<b<<"x"<<endl<<endl;
+cout<<"Enter value of x for calculation of equation"<<endl;
+cin>>p;
+cout<<"The value is given by y="<<a+b*p<<endl;
 return 0;
 }
